@@ -96,6 +96,7 @@ public class Res extends RESTService {
   @Path("/test")
   @Produces(MediaType.APPLICATION_JSON)
   @Consumes(MediaType.TEXT_PLAIN)
+  @RolesAllowed("authenticated")
   @ApiResponses(value = {
        @ApiResponse(code = HttpURLConnection.HTTP_OK, message = "res")
   })
